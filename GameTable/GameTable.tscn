@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GameTable.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="GameTable" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+modulate = Color( 0, 0, 0, 1 )
+scale = Vector2( 10, 10 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Gems" type="Node2D" parent="." index="1"]
+
+position = Vector2( -120, 0 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+
